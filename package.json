@@ -37,29 +37,8 @@
     "server": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "serverless": "vercel --prod"
+    "eject": "react-scripts eject"
   },
-  "functions": {
-    "api/createMembership": {
-      "handler": "functions/createMembership.js",
-      "environment": {
-        "MONGODB_URI": "mongodb+srv://admin:BrulTZ9gH5KG63Ki@cluster0.qocy1xl.mongodb.net/nftMembershipsApp?retryWrites=true&w=majority"
-      }
-    },
-    "api/deployNFT": {
-      "handler": "functions/deployNFT.js",
-      "environment": {
-        
-      }
-    }
-  },
-    "api/getMemberships": {
-      "handler": "functions/getMemberships.js",
-      "environment": {
-        "MONGODB_URI": "mongodb+srv://admin:BrulTZ9gH5KG63Ki@cluster0.qocy1xl.mongodb.net/nftMembershipsApp?retryWrites=true&w=majority"
-      }
-    },
   "eslintConfig": {
     "extends": [
       "react-app",

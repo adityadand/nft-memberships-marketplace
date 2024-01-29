@@ -29,26 +29,26 @@ const CreatorForm = ({ onSubmit }) => {
         formData.append('priceUsd', values.priceUsd);
         formData.append('benefits', values.benefits);
 
-        
         // Log FormData for debugging
         console.log('FormData:', formData);
 
         // Use axios.post with FormData for file uploads
-        const response = await axios.post('/api/memberships', formData, {
+        const response = await axios.post('http://localhost:5000/api/memberships', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
         });
 
         // Log response for debugging
+        console.log('API Response:', response.data);
 
         console.log('Submitted Values:');
         console.log('Title:', values.title);
         console.log('Symbol:', values.symbol);
-        console.log('Price (USD):', values.priceUsd);
-        console.log('Benefits:', values.benefits);
+    console.log('Price (USD):', values.priceUsd);
+console.log('Benefits:', values.benefits);
 
-        // await axios.post('/api/deploy', {
+        // await axios.post('http://localhost:5000/api/deploy', {
         //   title: values.title,
         //   symbol: values.symbol,
         //   priceUsd: values.priceUsd,
