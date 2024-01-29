@@ -1,0 +1,66 @@
+{
+  "name": "nft-memberships-marketplace",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.17",
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "ethers": "^6.10.0",
+    "express": "^4.18.2",
+    "formik": "^2.4.5",
+    "framer-motion": "^11.0.3",
+    "mongoose": "^8.1.1",
+    "multer": "^1.4.5-lts.1",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3",
+    "react-scripts": "5.0.1",
+    "shadcn-ui": "^0.8.0",
+    "tailwindcss": "^3.4.1",
+    "web-vitals": "^2.1.4",
+    "web3": "^4.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start_serve": "node ./server.js && npm start",
+    "dev": "concurrently \"npm start\" \"node ./server.js\"",
+    "server": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "chai-bignumber": "^3.1.0",
+    "concurrently": "^8.2.2",
+    "hardhat": "^2.19.4"
+  }
+}

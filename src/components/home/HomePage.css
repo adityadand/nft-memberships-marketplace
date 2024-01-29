@@ -1,0 +1,44 @@
+/* homepage.css */
+
+/* Overall container style */
+.HomePage-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, brown, #282c34);
+  }
+  
+  /* Heading at the top */
+  .HomePage-heading {
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    margin-bottom: 4rem;
+  }
+  
+  /* Centered buttons with increased size and outline effects */
+  .HomePage-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Creator and Buyer Buttons */
+  .HomePage-button {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    font-size: 2.25rem;
+    cursor: pointer;
+    outline: auto;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .HomePage-button:hover {
+    background: linear-gradient(45deg, gray,  wheat);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+  
