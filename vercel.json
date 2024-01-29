@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "src": "/api/memberships",
+      "dest": "/functions/getMemberships.js"
+    },
+    {
+      "src": "/api/createMembership",
+      "dest": "/functions/createMembership.js"
+    },
+    {
+      "src": "/api/deployNFT",
+      "dest": "/functions/deployNFT.js"
+    },
+    {
+      "src": "/api/memberships/:id/image",
+      "dest": "/functions/getMembershipImage.js" // Assuming you have a function for fetching images
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ]
+}
