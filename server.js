@@ -10,7 +10,7 @@ const { spawn } = require('child_process');
 
 
 const app = express();
-const port = process.env.PORT || 5555;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
