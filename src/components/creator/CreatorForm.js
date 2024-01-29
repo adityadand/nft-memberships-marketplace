@@ -33,7 +33,7 @@ const CreatorForm = ({ onSubmit }) => {
         console.log('FormData:', formData);
 
         // Use axios.post with FormData for file uploads
-        const response = await axios.post('http://localhost:5000/api/memberships', formData, {
+        const response = await axios.post('https://nft-server-370i.onrender.com/api/memberships', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
