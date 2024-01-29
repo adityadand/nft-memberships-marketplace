@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# React NFT Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the React NFT Marketplace project! This decentralized marketplace allows users to buy and sell NFTs (Non-Fungible Tokens) in a secure and efficient manner. Built with React, Chakra UI, Hardhat, Axios, and Formik, this project aims to provide a seamless and user-friendly experience for both buyers and sellers in the NFT space.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Decentralized Trading:** Enjoy a decentralized marketplace that leverages blockchain technology for secure and transparent transactions.
 
-### `npm start`
+- **User-friendly Interface:** The React NFT Marketplace comes with an intuitive and aesthetically pleasing UI, ensuring a smooth experience for users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Chakra UI for Design:** We chose Chakra UI for its simplicity, flexibility, and customizable components. This enables us to maintain a consistent and visually appealing design across the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Hardhat for Smart Contracts:** The project utilizes Hardhat, a development environment for Ethereum, to streamline the process of writing, testing, and deploying smart contracts. This ensures the security and reliability of the NFT trading platform.
 
-### `npm test`
+- **Axios for API Requests:** Axios is employed to handle HTTP requests, ensuring efficient communication between the frontend and backend. This helps in fetching and updating data seamlessly, enhancing the overall user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Formik for Form Management:** Formik is integrated to simplify form management, making it easy to handle form state, validation, and submission. This results in a more user-friendly interaction when creating and updating NFT listings.
 
-### `npm run build`
+## Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before you start, make sure you have the following dependencies installed:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js
+- npm or yarn
+- Ethereum wallet (for testing purposes, you can use Hardhat's local network)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. git clone https://github.com/adityadand/nft-memberships-marketplace.git
+cd nft-memberships-marketplace
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies:
+npm install   
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Start the development server:
+npm start   
+Visit http://localhost:3000 to view the application.
