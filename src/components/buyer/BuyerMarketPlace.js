@@ -12,7 +12,7 @@ const BuyerMarketplace = () => {
   useEffect(() => {
     const fetchMemberships = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/memberships');
+        const response = await axios.get('https://nft-server-370i.onrender.com/api/memberships');
         console.log('Fetched Memberships:', response.data);
         setMemberships(response.data);
         setFilteredMemberships(response.data); // Initialize with all memberships
