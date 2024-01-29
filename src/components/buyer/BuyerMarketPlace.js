@@ -8,14 +8,12 @@ const BuyerMarketplace = () => {
   const [filteredMemberships, setFilteredMemberships] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-
   useEffect(() => {
     const fetchMemberships = async () => {
       try {
         const response = await axios.get('/api/memberships');
-        console.log('Fetched Memberships:', response.data);
         setMemberships(response.data);
-        setFilteredMemberships(response.data); // Initialize with all memberships
+        setFilteredMemberships(response.data);
       } catch (error) {
         console.error('Error fetching memberships:', error);
       }
@@ -23,8 +21,6 @@ const BuyerMarketplace = () => {
 
     fetchMemberships();
   }, []);
-
-
 
   const handleSearch = () => {
     const searchTermLowerCase = searchTerm.toLowerCase();
@@ -79,7 +75,7 @@ const BuyerMarketplace = () => {
         {filteredMemberships.map((membership) => (
           <Box key={membership._id} bg="white" p="4" borderRadius="md" overflow="hidden" boxShadow="md">
             <img
-              src={`data:image/jpeg;base64,${membership.images[0]}`}
+              src={`/api/memberships/${membership._id}/image`}
               alt=""
               className="w-full h-32 object-cover mb-4 rounded-md"
             />
